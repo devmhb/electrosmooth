@@ -9,7 +9,7 @@ import { Product } from "../components";
     const [cartItems, setCartItems] = useState([]);
     const [totalPrice, setTotalPrice] = useState();
     const [totalQuantities, setTotalQuantities] = useState();
-    const [qty, setQty] = useState(0)
+    const [qty, setQty] = useState(1)
 
 
     const onAdd = (product, quantity) => {
@@ -40,7 +40,7 @@ import { Product } from "../components";
     }
     const decQty = () => {
       setQty((prevQty) => {
-        if(prevQty - 1 < 1 ) return 0;
+        if(prevQty - 1 < 1 ) return 1;
         return prevQty-1
       })
     }
