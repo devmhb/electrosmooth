@@ -8,9 +8,9 @@ import { Product } from "../components";
     const [showCart, setShowCart] = useState(false);
     const [cartItems, setCartItems] = useState([]);
     const [totalPrice, setTotalPrice] = useState();
-    const [totalQuantities, setTotalQuantities] = useState();
+    const [totalQuantities, setTotalQuantities] = useState(0);
     const [qty, setQty] = useState(1)
-
+ 
 
     const onAdd = (product, quantity) => {
         const checkProductInCart = cartItems.find((item) => item._id === product._id);
@@ -49,6 +49,7 @@ import { Product } from "../components";
         <Context.Provider
         value={{
             showCart,
+            setShowCart,
             cartItems,
             totalPrice,
             totalQuantities,
