@@ -1,31 +1,54 @@
-import React from 'react'
-import Link from 'next/link'
-import { urlFor } from '../lib/client'
+import React from "react";
+import Link from "next/link";
+import { urlFor } from "../lib/client";
 
-const FooterBanner = ({footerBanner: { discount, midText, saleTime, largText1,largText2, smallText, desc, product,buttonText,image}}) => {
+const FooterBanner = ({
+  footerBanner: {
+    discount,
+    midText,
+    saleTime,
+    largText1,
+    largText2,
+    smallText,
+    desc,
+    image,
+  },
+}) => {
   return (
     <div className="footer-banner-container">
       <div className="banner-desc">
         <div className="left">
-        <p>{discount}</p>
-        <h3>{midText}</h3>
-        <h3>{largText1}</h3>
-        <p>{saleTime}</p>
+          <p>{discount}</p>
+          <h3>{midText}</h3>
+          <h3>{largText1}</h3>
+          <p>{saleTime}</p>
         </div>
         <div className="right">
-            <p>{smallText}</p>
-            <h3>{largText2}</h3>
-            <p>{desc}</p>
-        <Link href={`/product/${product}`}>
+          <p>{smallText}</p>
+          <h3>{largText2}</h3>
+          <p>{desc}</p>
+          {/* <Link href={`/product/${product}`}>
           <button type='button'>{buttonText}</button>
-        </Link>
+        </Link> */}
         </div>
-        <img src={urlFor(image)} alt="footer-banner-img"
-        className='footer-banner-image'
-        />
+        <div
+          style={{
+            position: "absolute",
+            top: "0",
+            bottom: "0",
+            right: "0",
+            left: "0",
+          }}
+        >
+          <img
+            src={urlFor(image)}
+            alt="footer-banner-img"
+            className="footer-banner-image"
+          />
+        </div>
       </div>
     </div>
-    )
-}
+  );
+};
 
-export default FooterBanner
+export default FooterBanner;
