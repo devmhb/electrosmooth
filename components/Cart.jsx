@@ -25,23 +25,17 @@ const Cart = () => {
   } = useStateContext();
 
   const handleCheckout = async () => {
-    console.log("Clicked");
     const stripe = await getStripe();
-    console.log(cartItems);
 
     const response = await fetch("/api/stripe", {
       method: "POST",
-      // mode: "cors",
-      // "Access-Control-Allow-Origin": "*",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(cartItems),
     });
-    console.log(response);
+
     if (response.status === 500) {
-      console.log(response.statusText);
-      console.log("failed");
       return;
     }
 
