@@ -71,7 +71,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## Contact
 
-Mehedi Hasan - [@portfoilo](https://devmhb.netlify.app/) - mehedibuiyan734@gmail.com
+Mehedi Hasan - [@portfoilo](https://devmhb.netlify.app/) - devmhbbd@gmail.com
 
 Project Link: [https://electrosmooth.netlify.app/](https://github.com/devmhb/electrosmooth)
 
