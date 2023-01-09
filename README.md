@@ -1,9 +1,9 @@
 <!-- PROJECT LOGO -->
 <div align="center">
-  <h1 align="center">ELectro Smooth</h1>
+  <h1 align="center">ELectroSmooth</h1>
 
   <p align="center">
-    Here you find different kinds of headphones.
+    Here you find different kinds of interesting tech gadgets and regular tech gadgets like laptops, headphone, speakers with best deals.
     <br />
     <br />
     <a href="https://electrosmooth.netlify.app/">View Demo</a>
@@ -35,7 +35,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://electrosmooth.netlify.app/)
 
-Here you find different kinds of headphones.
+Here you find different kinds of interesting tech gadgets and regular tech gadgets like laptops, headphone, speakers with best deals.
 
 <p align="right"><a href="#top">⇧Back To Top</a></p>
 
@@ -46,7 +46,7 @@ Here you find different kinds of headphones.
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Sass](https://sass-lang.com/)
 - [Sanity](https://www.sanity.io/)
-- [stripe](https://stripe.com/)
+- [Stripe](https://stripe.com/)
 
 <p align="right"><a href="#top">⇧Back To Top</a></p>
 
